@@ -1,84 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-	<title>topfunky/topfunky-sparkline-js @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #4782fa;
-		  font-family: "Helvetica,Arial,FreeSans"; 
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #b87d05; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #b87d05; }
-    h3 { text-align: center; color: #b87d05; }
-    a { color: #b87d05; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
-</head>
-
-<body>
-  <a href="http://github.com/topfunky/topfunky-sparkline-js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-  
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/topfunky/topfunky-sparkline-js/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/topfunky/topfunky-sparkline-js/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <title>Topfunky Sparkline Javascript Library</title>
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+          body { font-family: sans-serif;}
+        </style>
+    </head>
+    <body>
+      <h1>Topfunky Sparkline Javascript Library</h1>
       
-    <h1><a href="http://github.com/topfunky/topfunky-sparkline-js">topfunky-sparkline-js</a> 
-      <span class="small">by <a href="http://github.com/topfunky">topfunky</a></span></h1>
-
-    <div class="description">
-      Sparkline graph library using Raphael.js
-    </div>
-
-    <h2>Install</h2>
-<p>Copy topfunky-sparkline.pkg.js to the public directory of your web application. Include it at the bottom of your HTML document just before the closing BODY directive.</p>
-<h2>License</h2>
-<p>MIT</p>
-<h2>Authors</h2>
-<p>Geoffrey Grosenbach (boss@topfunky.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Geoffrey Grosenbach (boss@topfunky.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/topfunky/topfunky-sparkline-js/zipball/master">zip</a> or
-      <a href="http://github.com/topfunky/topfunky-sparkline-js/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/topfunky/topfunky-sparkline-js</pre>
-    </p>
+      <div id="chart"></div>
       
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/topfunky/topfunky-sparkline-js">topfunky/topfunky-sparkline-js</a>
-    </div>
-    
-  </div>
+      <p>by Geoffrey Grosenbach</p>
 
-  
-</body>
+      <p>A work in progress.</p>
+
+      <p>&rarr; <a href="http://github.com/topfunky/topfunky-sparkline-js">Code at GitHub</a></p>
+
+      <script src="topfunky-sparkline.pkg.js" type="text/javascript" charset="utf-8"></script>
+
+      <script>
+      TopfunkySparkline('chart', 
+                   [5, 5, 5, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5, 21, 10, 3, 24, 18, 50, 0, 1, 45, 29, 5], 
+                   {
+                     width:400, 
+                     height:30, 
+                     title:"Sparkline Graph", 
+                     target:25, 
+                     good_threshold:20});
+      </script>
+    </body>
 </html>
