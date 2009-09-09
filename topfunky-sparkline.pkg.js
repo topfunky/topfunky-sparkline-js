@@ -18,7 +18,7 @@ Cufon.registerFont(Raphael.registerFont({"w":48,"face":{"font-family":"04b21","f
 
 /*
   Usage:
-  JSSparklines('chart',
+  TopfunkySparkline('chart',
                [42, 15, 21, 7],
                { width:400,
                  height:30,
@@ -26,7 +26,7 @@ Cufon.registerFont(Raphael.registerFont({"w":48,"face":{"font-family":"04b21","f
                  target:25,
                  good_threshold:20});
 */
-var JSSparklines = function(elementName, datapoints, opts) {
+var TopfunkySparkline = function(elementName, datapoints, opts) {
 
   this.width  = opts.width;
   this.height = opts.height;
