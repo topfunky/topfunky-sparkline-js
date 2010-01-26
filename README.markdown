@@ -3,7 +3,9 @@ Description
 
 A Javascript library for creating small but informative graphs with Javascript.
 
-Packages the [Raphael](http://raphaeljs.com/) and [Cufon](http://cufon.shoqolate.com/generate/) libraries for SVG and font drawing, respectively.
+Requires the [Raphael](http://raphaeljs.com/) SVG drawing library. 
+
+Can be used with [Cufon](http://cufon.shoqolate.com/generate/) for font drawing.
 
 Author
 ------
@@ -22,5 +24,11 @@ Usage
                     [1,2,3,4,5], 
                     {width:400, height:30, title:"A Chart"});
 
+Planned Features
+----------------
+
+* A bullet graph
+* Extra info on hover
+* Other graph types (time plot)
 
 
